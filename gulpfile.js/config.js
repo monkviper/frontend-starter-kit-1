@@ -19,6 +19,7 @@ module.exports = {
         css: path.join(dist, 'css'),
         images: path.join(dist, 'images'),
         patterns: path.join(docs, 'pattern-library'),
+        tokens: path.join(source, 'sass/tokens'),
     },
 
     PlzOptions: {
