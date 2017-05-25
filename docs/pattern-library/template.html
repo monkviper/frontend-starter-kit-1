@@ -10,24 +10,29 @@
 </head>
 <body>
 
-    <div class="wrapper t-plain header" role="contentinfo">
-        <div class="gutters" style="padding-top:15px;padding-bottom:15px;">
-            <div class="grid">
-                <div class="width-1/2">
+    <div class="[ wrapper ] t-plain header" role="contentinfo">
+        <div class="[ gutters ]" style="padding-top:15px;padding-bottom:15px;">
+            <div class="[ grid ]">
+
+                <div class=" [ width-1/2 ]">
                     <a href="/">
                         <svg class="icon icon--leaf" aria-hidden="true" aria-role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="28px" viewBox="0 0 64 28" xml:space="preserve"><path fill="#7DC265" d="M54.17,2.91c-6.3,0-8.53-1.81-15.07-1.81c-5.77,0-11.21,2.19-12.31,11.64c-0.81,7.06-4.19,9.54-8.1,9.54 c-3.01,0-5.01-1-5.96-3.38c3.86-1.19,6.01-4.44,6.01-8.63c0-5.34-3.44-9.15-9.39-9.15C3.43,1.1,0,4.91,0,10.25 c0,4.34,2.29,7.68,6.35,8.77c1.38,6.3,6.2,8.68,12.3,8.68c7.11,0,12.73-4.34,13.88-12.78c2.86,3.1,6.72,4.05,10.64,4.05 c10.73,0,18.5-8.2,20.84-17.98C60.71,2.29,57.65,2.91,54.17,2.91z M9.35,13.97c-2.19,0-3.39-1.53-3.39-3.62 c0-2.15,1.19-3.67,3.39-3.67c2.24,0,3.43,1.52,3.43,3.67C12.78,12.45,11.59,13.97,9.35,13.97z"/></svg>
                     </a>
                 </div>
-                <div class="width-1/2">
-                    <p class="u-text-right">Pattern library</p>
+
+                <div class="[ width-1/2 ]">
+                    <p class="u-text-right">
+                        Pattern library
+                    </p>
                 </div>
+
             </div>
         </div>
-    </div>
+    </div><!-- header wrapper ends-->
 
     <div  class="theme--dark">
-        <div class="wrapper wrapper--narrow">
-            <div class="section gutters">
+        <div class="[ wrapper wrapper--narrow ]">
+            <div class="[ section gutters ]">
                 <div class="u-text-center">
                     <p class="logo" aria-hidden="true">▽</p>
                     <h1>
@@ -54,31 +59,29 @@
     </div>-->
 
 
-    <div class="">
-        <div class="wrapper wrapper--narrow">
-            <div class="section gutters">
-                <h2>
-                    Getting started
-                </h2>
-                <p>
-                    To reuse the patterns, head over to our <a href="https://github.com/springload/frontend-starter-kit/">front-end starter kit</a> on GitHub and copy the styles as required.
-                </p>
-                <h3>
-                    Maintaining the patterns
-                </h3>
-                <p>
-                    At the moment, we rely on <a href="https://www.npmjs.com/package/markdown-styleguide-generator">markdown-styleguide-generator</a> to automatically generate the pattern library from comments in the stylesheets.
-                </p>
-                <p>
-                    If you are adding to this codebase please check out our <a href="https://github.com/springload/frontend-starter-kit/blob/master/docs/front-end-principles.md">coding guidelines</a>.
-                </p>
-            </div>
+    <div class="[ wrapper wrapper--narrow ]">
+        <div class="[ section gutters ]">
+            <h2>
+                Getting started
+            </h2>
+            <p>
+                To reuse the patterns, head over to our <a href="https://github.com/springload/frontend-starter-kit/">front-end starter kit</a> on GitHub and copy the styles as required.
+            </p>
+            <h3>
+                Maintaining the patterns
+            </h3>
+            <p>
+                At the moment, we rely on <a href="https://www.npmjs.com/package/markdown-styleguide-generator">markdown-styleguide-generator</a> to automatically generate the pattern library from comments in the stylesheets.
+            </p>
+            <p>
+                If you are adding to this codebase please check out our <a href="https://github.com/springload/frontend-starter-kit/blob/master/docs/front-end-principles.md">coding guidelines</a>.
+            </p>
         </div>
     </div>
 
-    <div class="theme--fred">
-        <div class="wrapper wrapper--narrow">
-            <div class="section gutters">
+    <div class="theme--dark">
+        <div class="[ wrapper wrapper--narrow ]">
+            <div class="[ section gutters ]">
                 <blockquote>
                     <p style="font-size:2.8em">
                         This is how it is <strong>now</strong>, until we change it
@@ -89,8 +92,8 @@
         </div>
     </div>
 
-    <div class="wrapper wrapper--narrow">
-        <div class="section gutters">
+    <div class="[ wrapper wrapper--narrow ]">
+        <div class="[ section gutters ] ">
             <h2>
                 Organisation
             </h2>
@@ -128,11 +131,12 @@
         </div>
     </div>
 
-    <div class="section gutters" style="background-color:#3D4149;">
-        <div class="wrapper styleguide" style="background-color:#7DC265;">
-            <div class="grid">
-                <div class="width-full width-3/4@medium theme--content">
-                    <div class="gutters section">
+    <div class="[ wrapper ]" style='background-color:#3D4149'>
+        <div class="[ section gutters ] styleguide" >
+            <div class="[ grid ]">
+                
+                <div class="[ width-full width-3/4@medium ] theme--content">
+                    <div class="[ gutters section ]">
                     {{#each sections}}
                         <div class="styleguide-section" id="{{id}}" data-section="{{section}}" data-heading="{{heading}}">
 
@@ -163,8 +167,8 @@
 
                 </div>
 
-                 <div class="width-full width-1/4@medium theme--fred">
-                    <div class="gutters section">
+                 <div class="[ width-full width-1/4@medium ] theme--fred">
+                    <div class="[ gutters section ]">
                         <ul class="list-unstyled styleguide-menu">
                             {{#each menu}}
                                 <li>
@@ -184,22 +188,23 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+
+            </div><!--grid ends-->
 
         </div>
-    </div>
+    </div><!--wrapper ends-->
 
 
     <!--footer-->
 
     <div  id="footer" role="contentinfo">
-        <div class="wrapper">
-            <div class="gutters section">
-                <div class="grid">
-                    <p class="u-text-right">
-                        Made with love by FRED <span style="color:#7DC265">&#10084;</span>
-                    </p>
-                </div>
+        <div class="[ wrapper ]">
+            <div class="[ gutters section ]">
+             
+                <p class="u-text-right">
+                    Made with love by some Friendly Feds <span style="color:#7DC265">&#10084;</span>
+                </p>
+             
             </div>
         </div>
     </div>
