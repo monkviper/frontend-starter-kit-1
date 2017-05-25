@@ -1,0 +1,126 @@
+// ============================================================================
+// Accordions
+// ============================================================================
+
+.accordion {
+    margin-bottom: $spacing;
+    border-top: 1px solid $color-accordian-separator;
+}
+
+    .accordion__item {
+        margin: 0;
+        border-bottom: 1px solid $color-accordian-separator;
+    }
+
+        .accordion__item__panel {
+            padding: 1em;
+        }
+
+        .accordion__title {
+            display: block;
+            position: relative;
+            margin: 0;
+            cursor: pointer;
+            color: $color-links;
+
+            &:hover {
+                color: $color-links-hover;
+                text-decoration: underline;
+            }
+        }
+
+        .accordion__title--small {
+            padding: .5rem 0;
+            font-size: rem(13);
+        }
+
+        .accordion__content {
+            display: none;
+        }
+
+        .accordion__content--rev {
+            margin-bottom: 0;
+        }
+
+        .collapsed--in > .accordion__content {
+            display: block;
+            animation: fadeIn .5s ease-out;
+        }
+
+        .accordion__arrow {
+            right: 0;
+            top: 50%;
+            margin-top: -6px;
+        }
+
+
+.no-js {
+
+    .accordion__content {
+        display: block;
+    }
+
+    .accordion__title {
+        cursor: inherit;
+
+        &:hover {
+            color: $color-links;
+            text-decoration: none;
+        }
+    }
+
+    .accordion__icon {
+        display: none;
+    }
+}
+
+//show hide arrows
+
+.collapsed--in > .accordion__title {
+
+    .accordion__arrow {
+        display: block;
+    }
+
+    .accordion__arrow-down {
+        display: none;
+    }
+
+    .accordion__arrow-up {
+        display: inline-block;
+    }
+
+}
+
+   .accordion__arrow {
+        vertical-align: middle;
+        margin-top: -.15em;
+    }
+
+    .accordion__arrow-down {
+        display: inline-block;
+    }
+
+    .accordion__arrow-up {
+        display: none;
+    }
+
+
+/* SG
+# Components/Accordian
+
+
+```
+<ul class='accordion '> 
+    <li class=" accordion__item" id="href-component-title-1">
+        <a class="accordion__title content-block-s " aria-selected="false" id="label-component-title-1" aria-controls="control-component-title-1" href="#href-component-title-1" role="tab" >
+            Accordian title here
+        </a>
+    
+        <div id="control-component-title-1" role="tabpanel" class="accordion__content " aria-hidden="true" aria-expanded="false" aria-labelledby="label-component-title-1">
+            <p>Content</p>
+        </div>
+    </li>
+</ul>
+```
+*/
