@@ -1,0 +1,52 @@
+/* SG
+# Objects/animations
+
+```
+<img class="anim-reveal" src="https://placekitten.com/200/150">
+<img class="anim-slidein" src="https://placekitten.com/200/150">
+<img class="anim-slideout" src="https://placekitten.com/200/150">
+<img class="anim-fadein" src="https://placekitten.com/200/150">
+```
+*/
+
+@include keyframe(slideInFromRight) {
+    0%{
+        @include vendor(transform, translateX(100%));
+    }
+    100%{
+        @include vendor(transform, translateX(0%));
+    }
+}
+
+@include keyframe(slideOutToRight) {
+    0%{
+        @include vendor(transform, translateX(0%));
+    }
+    100%{
+        @include vendor(transform, translateX(100%));
+    }
+}
+
+@include keyframe(fadeIn) {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.anim-reveal {
+    @include vendor(animation, slideInFromRight $duration-transition both $ease);
+}
+.anim-slidein {
+    @include vendor(animation, slideInFromRight $duration-transition both $ease);
+}
+.anim-slideout {
+    @include vendor(animation, slideOutToRight $duration-transition both $ease);
+}
+
+.anim-fadein {
+    @include vendor(animation, fadeIn $duration-transition both $ease);
+}
